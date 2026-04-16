@@ -1,0 +1,469 @@
+:root {
+    --peach:#ffdab9;
+    --dark: #2f4f4f;
+    --cyan:#e0ffff;
+    --brown: #3e2723;
+    --green:#25d366;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+}
+#nav-container {
+    background-color: var(--cyan);
+    position: sticky;
+    top: 0;
+}
+
+    
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100;
+    height: 60px;
+}
+.nav-flex label, #hamburger {
+    display: none;
+}
+nav ul {
+    list-style-type:none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    display: block;
+    color:var(--dark) ;
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height:60px;
+
+}
+nav ul li a:hover {
+    background-color: var(--peach);
+    transition: all 0.3s ;
+}
+.nav-brand h2 {
+    margin: 14px 0 0 10px;
+    color: var(--dark);
+}
+
+#hero-container{ 
+    background-image: url(../image/hero.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.text{
+    text-align: center;
+    color: var(--cyan);
+    font-size: 20px;
+
+
+}
+a.button {
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--green);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid var(--dark);
+
+}
+a.button:hover {
+    background-color: var(--peach);
+    color: var(--brown);
+    transition: all 0.3s;
+    transform: translate(-2px, -4px);
+    transition-timing-function: ease-in-out;
+    
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+#about h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#about .about-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 100%;
+}
+.about-image,.about-text {
+    width: 50%;
+    margin: 14px;
+}
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#services h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#services .services-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.services-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+.services-items {
+    padding: 20px 5px ;
+    width: 25%;
+}
+.services-items .fas {
+    font-size: 40px;
+    color: var(--green);
+}
+#catalog h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+.catalog-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.catalog-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 30px auto;
+}
+.catalog-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.catalog-items img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.catalog-items h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    color: var(--dark);
+}
+.catalog-items p {
+    font-size: 14px;
+    color: var(--dark); 
+}
+.price-chat-container {
+    border-bottom: 2px solid var(--dark);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.price-harga span  {
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 14px;
+}
+.chat-button button {
+    border: none;
+    color: var(--cyan);
+    background-color: var(--green);
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid var(--dark);
+}
+.chat-button button:hover {
+    background-color: var(--dark);
+    color: var(--cyan);
+    transition: all 0.3s;
+    transform: translate(2px, -4px);
+    transition-timing-function: ease-in-out;
+}
+#portfolio h1 {
+    color: var(--brown);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#portfolio .portfolio-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.portfolio-flex {
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+}
+.portfolio-items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-bottom: 2px solid #c03b23;
+}
+.portfolio-items {
+    width: 31%;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+#contact h1{
+   text-align: center;
+   color: var(--dark);
+   margin-top: 80px;
+}
+#contact .contact-deskripsi{
+    text-align: center;
+    color: var(--dark);
+
+}
+.contact-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 100%;
+}
+.map {
+    width: 60%;
+}
+.map h3 {
+    text-align: center;
+    font-size: 18px;
+    color: var(--dark);
+}
+.map iframe {
+    border-radius: 10px
+}
+.social-media {
+    width: 40%;
+    padding: 10px;
+}
+.social-media h3 {
+    color: var(--dark);
+    text-align: center;
+    font-size: 18px;
+}
+.social-icon {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 16px;
+    margin: 10px;
+    background-color: var(--cyan);
+    padding: 10px;
+    border-radius: 10px
+}
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+.twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+.whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+.instagram {
+    background-color: #e1306C;
+    color: white;
+}
+.social-icon :hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+    transform: translate(-2px, -4px);
+    transition-timing-function:ease-out;
+}
+/*footer*/
+.footer-container {
+    margin-top: 60px;
+    color: var(--cyan);
+    background-color: var(--cyan);
+    padding: 30px 5px;
+}
+.footer-container a {
+    color: var(--dark);
+    text-decoration: none;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.footer-flex  {
+    display: flex;
+    color: var(--dark);
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+.footer-flex section ul{
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+}
+.footer-flex section {
+    width: 25%;
+    text-align: center;
+}
+footer h3 {
+    margin-top: 10px;
+}
+.footer-copy-rigth {
+    width: 100%;
+    color: var(--dark);
+    display: flex;
+    margin-top: 50px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.footer-copy-rigth a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+/* versi tablet */
+  @media screen and (max-width: 835px) 
+  /* menampilkan ikon hamburger */
+{
+    #nav-container .nav-flex label {
+        display:  inline-block ;
+        font-size: 32px;
+        padding: 8px;
+        font-style: normal;
+        color: var(--dark);
+    }
+    #nav-container .nav-flex {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column; 
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    nav ul li a {
+        display: block;
+        color: var(--dark);
+        background-color:var(--cyan) ;
+        padding: 0 30px;
+        height: auto;
+
+    }
+    /* pindahkan posisi brand ke kanan */
+    .nav-brand h2 {
+        position: absolute;
+        right: 20px;
+    }
+    /* sembunyikan menu navigasi*/
+    #nav-container nav  {
+        display: none;
+    }
+    #nav-container .nav-flex input:checked ~ nav {
+        display: flex;
+    }
+    /* about */
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-image,.about-text {
+        width: auto;
+        margin: 10px 0;
+    }
+    /* services our fitur */
+    .services-items {
+        width:50%;
+    }
+    /* catalog */
+    .catalog-items {
+        width: 50%;
+    
+    }
+    .portfolio-items{
+        width: 45%;
+    }
+    .portfolio-items img {
+        width: 100%;
+    }
+    /* contact */
+    .contact-flex {
+        flex-direction: column;
+    }
+    .map, .social-media {
+        margin: 10px 0;
+        width: 100%;
+    }
+    /*footer*/
+    .footer-flex section {
+        width: 50%;
+    }
+}
+/* versi mobile */
+  @media screen and (max-width: 481px) {
+    .services-items {
+        width: 100%;
+    }
+    .services-flex {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .catalog-items {
+        width: 100%;
+    }
+    .portfolio-items {
+        width: 100%;
+    }
+    .contact-flex {
+        flex-direction: column;
+    }
+    .footer-flex section {
+        width: 100%;
+    }
+
+    
+  }
+
